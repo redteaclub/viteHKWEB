@@ -23,3 +23,8 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
+<script setup>
+import { data } from './data.js'
+</script>
+
+<pre>{{ data }}</pre>
