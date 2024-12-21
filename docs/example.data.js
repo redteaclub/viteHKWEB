@@ -1,8 +1,6 @@
 // example.data.js
 export default {
-    load() {
-      return {
-        hello: 'world'
-      }
+    async load() {
+      return (await fetch('https://api.github.com/users/redteaclub/repos')).json()
     }
   }
