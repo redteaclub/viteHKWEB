@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "HKWEB Online"
-  text: "HK website collections"
-  tagline: My great project tagline
+  text: "精華網站"
+  tagline: Bookmark Collections
   actions:
     - theme: brand
       text: Markdown Examples
