@@ -24,24 +24,8 @@ features:
 ---
 
 <script setup>
-import { data } from './example.data.js'
+import { data as posts} from './example.data.js'
+
 </script>
+<pre>{{ posts }}</pre>
 
-<script setup>
-import { ref, onMounted } from 'vue';
-const githubProjects = ref([]);
-onMounted(async () => {
-  const response = await fetch('https://api.github.com/users/redteaclub/repos');
-  githubProjects.value = await response.json();
-});
-</script>
-
-<pre>{{ data }}</pre>
-
-<template>
-    <ul>
-      <li v-for="project in githubProjects" :key="project.id">
-        <a :href="project.html_url">{{ project.name }}</a>
-      </li>
-    </ul>
-</template>   
