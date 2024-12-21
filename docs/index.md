@@ -24,7 +24,7 @@ features:
 ---
 
 <script setup>
-import { data } from './data.js'
+import { data } from './example.data.js'
 </script>
 
 <pre>{{ data }}</pre>
