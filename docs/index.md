@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "HKWEB Online"
-  text: "A VitePress Site"
+  text: "HK website collections"
   tagline: My great project tagline
   actions:
     - theme: brand
