@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "HKWEB Online"
+  name: "HKWEB Online 2025"
   text: "精華網站 2025"
   tagline: Bookmark Collections
   actions:
@@ -23,26 +23,7 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
-<script>
-async function fetchLatestRepos() {
-  const response = await fetch('https://api.github.com/users/redteaclub/repos?sort=updated');
-  const repos = await response.json();
-  return repos.slice(0, 5); // Change the number to show more or fewer repos
-}
-
-async function displayRepos() {
-  const repos = await fetchLatestRepos();
-  const repoList = document.getElementById('repo-list');
-  
-  repos.forEach(repo => {
-    const listItem = document.createElement('li');
-    listItem.innerHTML = `<a href="${repo.html_url}" target="_blank">${repo.name}</a><p>${repo.description || 'No description'}</p>`;
-    repoList.appendChild(listItem);
-  });
-}
-
-document.addEventListener('DOMContentLoaded', displayRepos);
+<script setup>
+import { data as posts } from './example.data.js'
 </script>
-
-<h2>Latest Repositories</h2>
-<ul id="repo-list"></ul>
+<pre>{{ posts }}</pre>
