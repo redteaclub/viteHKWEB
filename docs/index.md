@@ -24,6 +24,7 @@ features:
 ---
 
 <script setup>
-import { data as posts } from './example.data.js'
+import RssFeed from './RssFeed.vue'; // Adjust the path as necessary
 </script>
-<pre>{{ posts }}</pre>
+
+<RssFeed />
