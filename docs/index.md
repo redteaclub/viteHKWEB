@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "HKWEB Online 2025"
-  text: "精華網站 2025"
+  name: "HKWEB Online 2025 v1"
+  text: "精華網站 2025 v1"
   tagline: Bookmark Collections
   actions:
     - theme: brand
